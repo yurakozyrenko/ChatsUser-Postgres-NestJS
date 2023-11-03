@@ -22,7 +22,7 @@ import { UserChats } from './user-chats/user-chats.model';
             port: Number(process.env.DB_PORT),
             username: process.env.DB_USER,
             password: String(process.env.DB_PASSWORD),
-            database: process.env.DB_DATABASE,
+            database: process.env.DB_NAME,
             models: [User, Chat, Message, UserChats],
             autoLoadModels: true,
         }),
